@@ -1,0 +1,51 @@
+.temperature-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator {
+  position: absolute;
+  width: 2px;
+  height: 40%;
+  background: #000;
+  transform-origin: bottom center;
+}
+
+.min-line,
+.max-line {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background: #000;
+  transform-origin: bottom center;
+}
+
+.min-line {
+  bottom: 0;
+  left: 30px;
+  transform: rotate(45deg);
+}
+
+.max-line {
+  bottom: 0;
+  right: 30px;
+  transform: rotate(-45deg);
+}
+
+.temperature-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
